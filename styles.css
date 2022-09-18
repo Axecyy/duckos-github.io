@@ -48,6 +48,14 @@
     padding-top: 1.3rem;
 }
 
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #9DA1AF;
+    font-size: 0.9rem;
+    margin:auto;
+}
+
 h1 {
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -59,7 +67,7 @@ h1 {
     font-weight: bold;
     font-size: 1.5rem;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /*(nice)*/
     padding-bottom: 16px;
 }
 
@@ -129,6 +137,8 @@ h1 {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    outline: 2px solid #000;
+    outline-offset: 0px;
 }
 
 .footer {
@@ -138,6 +148,36 @@ h1 {
     padding-bottom: 80px;
     padding-left: 15%;
     padding-right: 15%;
+}
+
+.footertop {
+    width: 100%;
+    background: #090c0f;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footerlink {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #FFF;
+    font-size: 1.3rem;
+}
+
+.footerlinks {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.backtotop {
+    height: 24px;
+}
+
+.footerlogo {
+    height: 40px;
 }
 
 .suggestiontext {
@@ -244,19 +284,19 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 15%;
+    padding: 80px 15%;
     background-color: transparent;
     position: relative;
 }
   
 .logo {
     margin-right: auto;
-    height: 150px;
+    height: 40px;
 }
 
 .brand {
     margin-right: auto;
-    height: 150px;
+    height: 40px;
 }
   
 .nav__links {
@@ -378,7 +418,7 @@ header {
     .cta {
       display: none;
     }
-    .menu {
+    .menu {  /*(nice)*/
       display: initial;
     }
 }
