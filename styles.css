@@ -8,6 +8,10 @@
     opacity: 64%;
 }
 
+.desktop {
+    width: 50%;
+}
+
 h1 {
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -15,11 +19,77 @@ h1 {
     font-weight: 800;
 }
 
+.feature {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 16px;
+}
+
+.flexbuttons {
+    display: flex;
+    flex-direction: row;
+    padding-left: 15%;
+    padding-top: 64px;
+    column-gap: 8px;
+}
+
+.downloadbtn {
+    border-radius: 2px;
+    border: none;
+    background: #0569FF;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 24px 36px;;
+    transition: all 0.3s ease 0s;
+}
+
+.downloadbtn:hover {
+    background-color: #0750bd;
+}
+
+.discordbtn {
+    border-radius: 2px;
+    border: 0.15rem solid rgb(14, 19, 27);
+    background: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 22.5px 36px;;
+    transition: all 0.3s ease 0s;
+}
+
+.discordbtn:hover {
+    background-color: rgb(14, 19, 27);
+    border: 0.15rem solid rgb(14, 19, 27);
+}
+
+.tick {
+    color: #0569FF;
+    padding-left: 15%;
+}
+
 .herosection {
     display: flex;
     padding-left: 15%;
     padding-right: 15%;
     width: 100%;
+    flex-direction: row;
+    gap: 25% 25%;
+}
+
+/* makes a one column layout instead of a 2-column layout */
+@media (max-width: 800px) {
+    .herosection {
+      flex-direction: column;
+    }
+    .desktop {
+        width: 100%;
+    }
 }
 
 body {
