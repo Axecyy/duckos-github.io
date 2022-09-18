@@ -10,6 +10,42 @@
 
 .desktop {
     width: 50%;
+    height: 25%;
+}
+
+.otherfeatures {
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: row;
+    gap: 14rem;
+    padding-bottom: 128px;
+}
+
+.displayfeature {
+    padding-top: 256px;
+    width: 100%;
+}
+
+.displayfeatureicon {
+    height: 100px;
+}
+
+.displayfeaturetitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 1.9rem;
+    letter-spacing: -2px;
+    padding-top: 1.3rem;
+}
+
+.displayfeatureparagraph {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 1.3rem;
+    padding-top: 1.3rem;
 }
 
 h1 {
@@ -82,7 +118,55 @@ h1 {
     gap: 25% 25%;
 }
 
-/* makes a one column layout instead of a 2-column layout */
+.suggestion {
+    width: 100%;
+    background: #090c0f;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer {
+    width: 100%;
+    background: #090c0f;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.suggestiontext {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+    margin-right: auto;
+}
+
+.suggestionbutton {
+    border-radius: 150px;
+    border: none;
+    background: #0569FF;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 24px 36px;;
+    transition: all 0.3s ease 0s;
+}
+
+.suggestionbutton:hover {
+    background-color: #0750bd;
+}
+
+
+/* goofy mobile @media crap (800px) */
 @media (max-width: 800px) {
     .herosection {
       flex-direction: column;
@@ -90,6 +174,58 @@ h1 {
     .desktop {
         width: 100%;
     }
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 3rem;
+        font-weight: 800;
+        padding-bottom: 24px;
+    }
+    .feature {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        padding-bottom: 16px;
+    }
+    .desktop {
+        width: 100%;
+        padding-bottom: 64px;
+    }
+    .discordbtn {
+        border-radius: 2px;
+        border: 0.15rem solid rgb(14, 19, 27);
+        background: transparent;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 16px 24px;;
+        transition: all 0.3s ease 0s;
+    }
+    .downloadbtn {
+        border-radius: 2px;
+        border: none;
+        background: #0569FF;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 16px 20px;;
+        transition: all 0.3s ease 0s;
+        line-height: 1px;
+    }
+    .topleftglow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+        opacity: 64%;
+        height: 200%;
+    }
+    
 }
 
 body {
@@ -167,7 +303,7 @@ header {
     padding: 16px 25px;
     background-color: #0569FF;
     border: none;
-    border-radius: 6px;
+    border-radius: 2px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
@@ -189,7 +325,7 @@ header {
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: #24252a;
+    background-color: #000000;
     overflow-x: hidden;
     transition: all 0.5s ease 0s;
 }
