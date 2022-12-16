@@ -213,6 +213,7 @@ h1 {
 .backtotop {
     height: 24px;
     margin: auto;
+    cursor: pointer;
 }
 
 .footerlogo {
@@ -446,6 +447,7 @@ h1 {
     .backtotop {
         height: 24px;
         margin: auto;
+        cursor: pointer;
     }
     
     .footerlogo {
